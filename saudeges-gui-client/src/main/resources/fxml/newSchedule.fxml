@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" vgap="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.fx.inputcontroller.NewCustomerController">
+   <children>
+      <Label text="Designacao da Atividade:" GridPane.halignment="RIGHT" />
+      <Label text="Instrutor:" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+      <Label text="Data Inicio:" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+      <Label text="Duração:" GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
+      <TextField fx:id="duracaoTextField" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets right="10.0" />
+         </GridPane.margin>
+      </TextField>
+      <Button fx:id="criaHorarioButton" mnemonicParsing="false" onAction="#CreateActivityAction" text="%button.createSchedule" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="8">
+         <GridPane.margin>
+            <Insets right="10.0" />
+         </GridPane.margin>
+      </Button>
+      <ComboBox fx:id="designacaoComboBox" prefWidth="150.0" GridPane.columnIndex="1" />
+      <Label text="Sessões:" GridPane.halignment="RIGHT" GridPane.rowIndex="4" />
+      <Label text="Dia da Semana:" GridPane.halignment="RIGHT" GridPane.rowIndex="6" />
+      <Label text="Hora de Inicio:" GridPane.halignment="RIGHT" GridPane.rowIndex="7" />
+      <ComboBox fx:id="instrutorComboBox" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <DatePicker fx:id="dataInicioSelector" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <ComboBox fx:id="sessoesComboBox" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Button fx:id="removerButton" mnemonicParsing="false" text="Remover" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets right="50.0" />
+         </GridPane.margin>
+      </Button>
+      <ComboBox fx:id="diaSemanaComboBox" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <TextField fx:id="horaInicioTextField" GridPane.columnIndex="1" GridPane.rowIndex="7">
+         <GridPane.margin>
+            <Insets right="10.0" />
+         </GridPane.margin>
+      </TextField>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Criar Sessão" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Button fx:id="criaSessaoButton" mnemonicParsing="false" text="Criar Sessão" textAlignment="CENTER" GridPane.halignment="RIGHT" GridPane.rowIndex="8" />
+   </children>
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="233.0" minWidth="10.0" prefWidth="133.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="355.0" minWidth="10.0" prefWidth="341.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+</GridPane>
